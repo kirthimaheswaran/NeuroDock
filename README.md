@@ -1,18 +1,43 @@
-# NeuroDock
+# 🧠 NeuroDock
 
-## Project
+## Computational Drug Discovery for Alzheimer's Disease
 
-This project explores consensus molecular docking to identify potential inhibitors of Alzheimer's disease targets.
+NeuroDock is a beginner-friendly computational biology project that demonstrates how consensus molecular docking can be used to identify potential inhibitors against Alzheimer's disease targets.
+
+---
 
 ## Objectives
 
-- Perform docking
-- Compare docking tools
-- Generate consensus scores
-- Visualize results
+- Learn Git and GitHub
+- Learn Python for bioinformatics
+- Analyze docking scores
+- Implement consensus scoring
+- Visualize molecular docking results
+
+---
 
 ## Tools
 
 - Python
-- AutoDock Vina
+- Git & GitHub
+- Visual Studio Code
 - Jupyter Notebook
+
+---
+
+## Project Structure
+
+NeuroDock/
+│
+├── data/
+├── figures/
+├── notebooks/
+├── references/
+├── results/
+└── scripts/
+
+---
+
+## Status
+
+🚧 Project under development
