@@ -1,43 +1,121 @@
 # 🧠 NeuroDock
 
-## Computational Drug Discovery for Alzheimer's Disease
-
-NeuroDock is a beginner-friendly computational biology project that demonstrates how consensus molecular docking can be used to identify potential inhibitors against Alzheimer's disease targets.
+> A beginner-friendly computational drug discovery project demonstrating consensus molecular docking for Alzheimer's disease.
 
 ---
 
-## Objectives
+## 📖 Overview
 
-- Learn Git and GitHub
-- Learn Python for bioinformatics
-- Analyze docking scores
-- Implement consensus scoring
-- Visualize molecular docking results
+NeuroDock is a computational biology project that demonstrates how consensus docking can improve ligand ranking by combining results from multiple docking software.
+
+Instead of relying on one docking algorithm, this project calculates an average consensus score from multiple docking programs.
 
 ---
 
-## Tools
+## 🎯 Objectives
 
-- Python
-- Git & GitHub
-- Visual Studio Code
-- Jupyter Notebook
+- Calculate consensus docking scores
+- Rank ligands based on predicted binding affinity
+- Visualize docking results
+- Demonstrate a reproducible computational workflow
 
 ---
 
-## Project Structure
+## 📂 Project Structure
 
+```
 NeuroDock/
 │
 ├── data/
+│   └── docking_scores.csv
+│
 ├── figures/
+│   └── consensus_scores.png
+│
 ├── notebooks/
-├── references/
+│
 ├── results/
-└── scripts/
+│   └── ranked_ligands.csv
+│
+├── scripts/
+│   └── analysis.py
+│
+├── requirements.txt
+└── README.md
+```
 
 ---
 
-## Status
+## 📊 Workflow
 
-🚧 Project under development
+Dataset
+⬇
+Consensus Score Calculation
+⬇
+Ligand Ranking
+⬇
+Visualization
+⬇
+Results
+
+---
+
+## 📈 Example Output
+
+The figure below shows the consensus docking scores calculated from the three docking programs.
+
+![Consensus Docking Scores](figures/consensus_scores.png)
+
+The ranked ligand results are automatically saved in:
+
+```text
+results/ranked_ligands.csv
+```
+
+## 🛠 Technologies Used
+
+- Python
+- Pandas
+- Matplotlib
+- Git
+- GitHub
+
+---
+
+## 🚀 How to Run
+
+Clone the repository:
+
+```bash
+git clone https://github.com/kirthimaheswaran/NeuroDock.git
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the analysis:
+
+```bash
+python3 scripts/analysis.py
+```
+
+---
+
+## 🔬 Future Improvements
+
+- Use real Alzheimer's disease docking data
+- Add statistical analysis
+- Compare multiple docking programs
+- Create an interactive Jupyter Notebook
+- Include molecular structure visualization
+
+---
+
+## 👩‍💻 Author
+
+**Kirthi Maheswaran**
+
+Computational Biology | Bioinformatics | Neuroscience Enthusiast

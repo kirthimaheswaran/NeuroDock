@@ -31,3 +31,7 @@ plt.tight_layout()
 plt.savefig("figures/consensus_scores.png")
 
 plt.show()
+# Save ranked ligands
+ranked.to_csv("results/ranked_ligands.csv", index=False)
+
+print("\nResults saved to results/ranked_ligands.csv")
