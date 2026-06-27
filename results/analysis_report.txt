@@ -1,0 +1,22 @@
+
+NeuroDock Analysis Report
+=========================
+
+Target Protein:
+Acetylcholinesterase (AChE)
+
+Best Ligand:
+Donepezil
+
+Consensus Score:
+-10.00
+
+Interpretation:
+The ligand Donepezil achieved the best average docking score
+across AutoDock Vina, Glide, and GOLD, suggesting consistent predicted
+binding affinity.
+
+Number of ligands analysed:
+6
+
+Analysis completed successfully.
