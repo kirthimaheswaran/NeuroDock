@@ -1,7 +1,16 @@
 Ligand,AutoDock_Vina,Glide,GOLD
-Curcumin,-8.1,-7.8,-8.0
 Donepezil,-10.2,-9.8,-10.0
+Galantamine,-9.5,-9.1,-9.3
+Rivastigmine,-9.2,-8.9,-9.0
+Tacrine,-9.0,-8.7,-8.8
+Memantine,-7.2,-6.9,-7.1
+Curcumin,-8.1,-7.8,-8.0
 Resveratrol,-7.9,-7.5,-7.8
 Quercetin,-8.8,-8.4,-8.6
-Galantamine,-9.5,-9.1,-9.3
 Berberine,-8.6,-8.3,-8.5
+Huperzine A,-9.7,-9.4,-9.5
+Luteolin,-8.4,-8.1,-8.3
+Apigenin,-8.3,-8.0,-8.2
+Kaempferol,-8.5,-8.2,-8.4
+Catechin,-7.8,-7.4,-7.6
+Genistein,-8.0,-7.7,-7.9
