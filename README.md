@@ -1,6 +1,7 @@
 # 🧠 NeuroDock
-
+**Version:** 1.0.0
 > A beginner-friendly computational drug discovery project demonstrating consensus molecular docking for Alzheimer's disease.
+
 
 ---
 
