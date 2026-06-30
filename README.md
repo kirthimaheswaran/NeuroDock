@@ -141,20 +141,23 @@ Generate Report
 
 ## 📓 Jupyter Notebook
 
-The repository also includes an interactive Jupyter Notebook:
+## 📓 Jupyter Notebook
 
-```
-notebooks/NeuroDock_Analysis.ipynb
-```
+A complete interactive Jupyter Notebook is included in this repository:
 
-The notebook demonstrates:
+📂 **Notebook:** [`notebooks/NeuroDock_Analysis.ipynb`](notebooks/NeuroDock_Analysis.ipynb)
 
-- Data loading
-- Consensus score calculation
-- Ligand ranking
-- Statistical analysis
-- Data visualization
-- Interpretation of results
+The notebook walks through the entire analysis workflow, including:
+
+- 🧬 Biological background
+- 📂 Data loading and preprocessing
+- 📊 Consensus score calculation
+- 📈 Statistical analysis
+- 📉 Data visualizations
+- 🔬 Results and discussion
+- ✅ Conclusions and limitations
+
+The notebook can be viewed directly on GitHub or downloaded and executed locally.
 
 ---
 
