@@ -9,6 +9,16 @@
 NeuroDock is a computational biology project that demonstrates how consensus docking can improve ligand ranking by combining results from multiple docking software.
 
 Instead of relying on one docking algorithm, this project calculates an average consensus score from multiple docking programs.
+## Workflow
+
+The NeuroDock workflow consists of the following steps:
+
+1. Load docking scores from a CSV file.
+2. Calculate a consensus score by averaging results from three docking programs.
+3. Rank ligands according to their consensus scores.
+4. Generate statistical summaries.
+5. Create graphs to visualize the results.
+6. Save the ranked results and analysis report.
 
 ---
 
