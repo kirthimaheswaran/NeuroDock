@@ -6,19 +6,17 @@
 
 ## 📖 Overview
 
-NeuroDock is a computational biology project that demonstrates how consensus docking can improve ligand ranking by combining results from multiple docking software.
+NeuroDock is a computational biology project that demonstrates how **consensus molecular docking** can improve ligand ranking by combining results from multiple docking programs.
 
-Instead of relying on one docking algorithm, this project calculates an average consensus score from multiple docking programs.
-## Workflow
+Instead of relying on a single docking algorithm, this project calculates an average **consensus score** from AutoDock Vina, Glide, and GOLD to identify promising Alzheimer's disease drug candidates.
 
-The NeuroDock workflow consists of the following steps:
+---
 
-1. Load docking scores from a CSV file.
-2. Calculate a consensus score by averaging results from three docking programs.
-3. Rank ligands according to their consensus scores.
-4. Generate statistical summaries.
-5. Create graphs to visualize the results.
-6. Save the ranked results and analysis report.
+## 🧬 Biological Target
+
+This project focuses on **Acetylcholinesterase (AChE)**, an important therapeutic target in Alzheimer's disease.
+
+AChE breaks down the neurotransmitter acetylcholine. Inhibiting this enzyme increases acetylcholine levels, helping improve memory and cognitive function in Alzheimer's patients.
 
 ---
 
@@ -26,26 +24,36 @@ The NeuroDock workflow consists of the following steps:
 
 - Calculate consensus docking scores
 - Rank ligands based on predicted binding affinity
+- Generate statistical summaries
 - Visualize docking results
-- Demonstrate a reproducible computational workflow
+- Demonstrate a reproducible computational biology workflow
+- Learn Git, GitHub, Python, and Jupyter Notebook
 
 ---
 
 ## 📂 Project Structure
 
-```
+```text
 NeuroDock/
 │
 ├── data/
-│   └── docking_scores.csv
+│   ├── docking_scores.csv
+│   └── protein_info.txt
 │
 ├── figures/
-│   └── consensus_scores.png
+│   ├── consensus_scores.png
+│   ├── docking_heatmap.png
+│   └── docking_comparison.png
 │
 ├── notebooks/
+│   └── NeuroDock_Analysis.ipynb
+│
+├── references/
+│   └── references.md
 │
 ├── results/
-│   └── ranked_ligands.csv
+│   ├── ranked_ligands.csv
+│   └── analysis_report.txt
 │
 ├── scripts/
 │   └── analysis.py
@@ -56,48 +64,102 @@ NeuroDock/
 
 ---
 
-## 📊 Workflow
+## ⚙️ Workflow
 
-Dataset
-⬇
-Consensus Score Calculation
-⬇
-Ligand Ranking
-⬇
-Visualization
-⬇
-Results
+The NeuroDock workflow consists of the following steps:
+
+1. Load docking scores from a CSV dataset.
+2. Calculate a consensus score by averaging three docking programs.
+3. Rank ligands according to their consensus score.
+4. Generate summary statistics.
+5. Visualize the results using graphs.
+6. Save ranked results and an analysis report.
+
+### Workflow Diagram
+
+```text
+Docking Scores (CSV)
+        │
+        ▼
+Load Data (Pandas)
+        │
+        ▼
+Calculate Consensus Score
+        │
+        ▼
+Rank Ligands
+        │
+        ▼
+Generate Statistics
+        │
+        ▼
+Create Visualizations
+        │
+        ▼
+Generate Report
+```
 
 ---
 
-## 📈 Example Output
+## 📊 Sample Results
 
-The figure below shows the consensus docking scores calculated from the three docking programs.
+### Consensus Docking Scores
 
-![Consensus Docking Scores](figures/consensus_scores.png)
+![Consensus Scores](figures/consensus_scores.png)
 
-The ranked ligand results are automatically saved in:
+### Docking Score Heatmap
 
-```text
-results/ranked_ligands.csv
+![Docking Heatmap](figures/docking_heatmap.png)
+
+### Docking Comparison
+
+![Docking Comparison](figures/docking_comparison.png)
+
+---
+
+## 📓 Jupyter Notebook
+
+The repository also includes an interactive Jupyter Notebook:
+
 ```
+notebooks/NeuroDock_Analysis.ipynb
+```
+
+The notebook demonstrates:
+
+- Data loading
+- Consensus score calculation
+- Ligand ranking
+- Statistical analysis
+- Data visualization
+- Interpretation of results
+
+---
 
 ## 🛠 Technologies Used
 
 - Python
 - Pandas
+- NumPy
 - Matplotlib
+- Jupyter Notebook
 - Git
 - GitHub
 
 ---
 
-## 🚀 How to Run
+## 🚀 Installation
 
 Clone the repository:
 
 ```bash
 git clone https://github.com/kirthimaheswaran/NeuroDock.git
+```
+
+Move into the project folder:
+
+```bash
+cd NeuroDock
 ```
 
 Install dependencies:
@@ -112,15 +174,36 @@ Run the analysis:
 python3 scripts/analysis.py
 ```
 
+Launch the Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+---
+
+## 📈 Project Outputs
+
+Running the project generates:
+
+- Ranked ligand table
+- Consensus docking scores
+- Heatmap visualization
+- Scatter plot comparison
+- Analysis report
+- Jupyter notebook visualizations
+
 ---
 
 ## 🔬 Future Improvements
 
-- Use real Alzheimer's disease docking data
-- Add statistical analysis
-- Compare multiple docking programs
-- Create an interactive Jupyter Notebook
-- Include molecular structure visualization
+- Integrate real Alzheimer's disease docking datasets
+- Analyse larger ligand libraries
+- Add statistical hypothesis testing
+- Compare additional docking software
+- Visualize molecular structures
+- Develop a Streamlit web application
+- Extend the workflow to other neurological targets
 
 ---
 
@@ -129,3 +212,9 @@ python3 scripts/analysis.py
 **Kirthi Maheswaran**
 
 Computational Biology | Bioinformatics | Neuroscience Enthusiast
+
+---
+
+## ⭐ Acknowledgements
+
+This project was created as a learning portfolio to explore computational drug discovery, Python programming, Git/GitHub, and scientific data visualization.
