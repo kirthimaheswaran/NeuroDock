@@ -9,7 +9,7 @@
 
 NeuroDock is a computational biology project that demonstrates how **consensus molecular docking** can improve ligand ranking by combining results from multiple docking programs.
 
-Instead of relying on a single docking algorithm, this project calculates an average **consensus score** from AutoDock Vina, Glide, and GOLD to identify promising Alzheimer's disease drug candidates.
+Instead of relying on a single docking algorithm, this project calculates an average **consensus score** from AutoDock Vina, Glide, and GOLD to rank compounds based on their predicted binding affinity.
 
 ---
 ## 🛠 Key Technologies
@@ -70,20 +70,28 @@ NeuroDock/
 ├── notebooks/
 │   └── NeuroDock_Analysis.ipynb
 │
+├── protein/
+│   ├── 4M0E.pdb
+│   └── README.md
+│
 ├── references/
 │   └── references.md
 │
 ├── results/
 │   ├── ranked_ligands.csv
-│   └── analysis_report.txt
+│   ├── analysis_report.txt
+│   └── protein_analysis_report.txt
 │
 ├── scripts/
-│   └── analysis.py
+│   ├── analysis.py
+│   └── protein_analysis.py
 │
-├── requirements.txt
-└── README.md
+├── .gitignore
+├── CHANGELOG.md
+├── LICENSE
+├── README.md
+└── requirements.txt
 ```
-
 ---
 
 ## ⚙️ Workflow
@@ -139,7 +147,6 @@ Generate Report
 
 ---
 
-## 📓 Jupyter Notebook
 
 ## 📓 Jupyter Notebook
 
@@ -167,6 +174,7 @@ The notebook can be viewed directly on GitHub or downloaded and executed locally
 - Pandas
 - NumPy
 - Matplotlib
+- Biopython
 - Jupyter Notebook
 - Git
 - GitHub
@@ -211,12 +219,12 @@ jupyter notebook
 
 Running the project generates:
 
-- Ranked ligand table
-- Consensus docking scores
+- Ranked ligand CSV file
+- Consensus docking score plots
 - Heatmap visualization
 - Scatter plot comparison
-- Analysis report
-- Jupyter notebook visualizations
+- Protein analysis report
+- Interactive Jupyter Notebook analysis
 
 ---
 ## 📌 Results Summary
@@ -231,14 +239,12 @@ The project successfully:
 
 ## 🔬 Future Improvements
 
-- Integrate real Alzheimer's disease docking datasets
-- Analyse larger ligand libraries
-- Add statistical hypothesis testing
-- Compare additional docking software
-- Visualize molecular structures
-- Develop a Streamlit web application
-- Extend the workflow to other neurological targets
+## 🔬 Future Improvements
 
+- Integrate experimentally validated docking datasets
+- Support additional protein targets
+- Compare consensus scoring methods
+- Perform molecular dynamics simulations
 ---
 
 ## 👩‍💻 Author
@@ -252,3 +258,11 @@ Computational Biology | Bioinformatics | Neuroscience Enthusiast
 ## ⭐ Acknowledgements
 
 This project was created as a learning portfolio to explore computational drug discovery, Python programming, Git/GitHub, and scientific data visualization.
+
+## 📚 References
+
+## 📚 References
+
+- RCSB Protein Data Bank: https://www.rcsb.org/
+- Biopython Documentation: https://biopython.org/
+- AutoDock Vina: https://autodock-vina.readthedocs.io/
