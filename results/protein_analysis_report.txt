@@ -1,0 +1,10 @@
+
+NeuroDock Protein Analysis
+==========================
+
+Protein Name : Acetylcholinesterase
+PDB ID       : 4M0E
+
+Number of Chains   : 4
+Number of Residues : 1631
+Number of Atoms    : 9002

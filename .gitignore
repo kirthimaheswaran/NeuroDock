@@ -1,2 +1,21 @@
-print("Welcome to NeuroDock!")
-print("This project explores consensus docking for Alzheimer's disease.")
+# Virtual environment
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# macOS system files
+.DS_Store
+
+# VS Code settings
+.vscode/
+
+# Generated Python cache folders
+*.egg-info/
+
+# Environment files
+.env

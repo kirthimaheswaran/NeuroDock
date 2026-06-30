@@ -1,30 +1,40 @@
 from Bio.PDB import PDBParser
 
-# Create a PDB parser
+# Create parser
 parser = PDBParser(QUIET=True)
 
-# Load the protein structure
+# Load protein structure
 structure = parser.get_structure("AChE", "protein/4M0E.pdb")
 
-# Basic information
+# Count information
+chains = list(structure.get_chains())
+residue_count = sum(1 for residue in structure.get_residues())
+atom_count = sum(1 for atom in structure.get_atoms())
+
+# Print results
 print("===================================")
 print("NeuroDock Protein Analysis")
 print("===================================")
 print("Protein Name : Acetylcholinesterase")
 print("PDB ID       : 4M0E")
-print()
-
-# Count chains
-chains = list(structure.get_chains())
 print(f"Number of Chains   : {len(chains)}")
-
-# Count residues
-residue_count = sum(1 for residue in structure.get_residues())
 print(f"Number of Residues : {residue_count}")
-
-# Count atoms
-atom_count = sum(1 for atom in structure.get_atoms())
 print(f"Number of Atoms    : {atom_count}")
 
-print()
-print("Protein loaded successfully!")
+# Save report
+report = f"""
+NeuroDock Protein Analysis
+==========================
+
+Protein Name : Acetylcholinesterase
+PDB ID       : 4M0E
+
+Number of Chains   : {len(chains)}
+Number of Residues : {residue_count}
+Number of Atoms    : {atom_count}
+"""
+
+with open("results/protein_analysis_report.txt", "w") as file:
+    file.write(report)
+
+print("\nProtein analysis report saved to results/protein_analysis_report.txt")
