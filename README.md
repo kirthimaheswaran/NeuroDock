@@ -12,6 +12,15 @@ NeuroDock is a computational biology project that demonstrates how **consensus m
 Instead of relying on a single docking algorithm, this project calculates an average **consensus score** from AutoDock Vina, Glide, and GOLD to identify promising Alzheimer's disease drug candidates.
 
 ---
+## 🛠 Key Technologies
+
+- **Python** – Data analysis and scripting
+- **Pandas** – Data manipulation
+- **NumPy** – Numerical computations
+- **Matplotlib** – Scientific visualizations
+- **Biopython** – Protein structure analysis
+- **Jupyter Notebook** – Interactive analysis
+- **Git & GitHub** – Version control and collaboration
 
 ## 🧬 Biological Target
 
@@ -31,6 +40,18 @@ AChE breaks down the neurotransmitter acetylcholine. Inhibiting this enzyme incr
 - Learn Git, GitHub, Python, and Jupyter Notebook
 
 ---
+## ✅ Project Features
+
+| Feature | Status |
+|---------|:------:|
+| Consensus Docking Analysis | ✅ |
+| Ligand Ranking | ✅ |
+| Data Visualization | ✅ |
+| Statistical Analysis | ✅ |
+| Jupyter Notebook | ✅ |
+| Protein Structure Analysis | ✅ |
+| Automatic Report Generation | ✅ |
+| Professional Documentation | ✅ |
 
 ## 📂 Project Structure
 
@@ -195,6 +216,15 @@ Running the project generates:
 - Jupyter notebook visualizations
 
 ---
+## 📌 Results Summary
+
+The project successfully:
+
+- Calculated consensus docking scores for multiple ligands.
+- Ranked compounds based on predicted binding affinity.
+- Generated bar charts, heatmaps, scatter plots, and histograms.
+- Produced automated analysis reports.
+- Analysed a real protein structure using Biopython.
 
 ## 🔬 Future Improvements
 
